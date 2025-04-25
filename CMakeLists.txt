@@ -14,7 +14,7 @@ file(GLOB_RECURSE SOURCES
 add_executable(pixel ${SOURCES})
 
 # 头文件路径（可选）
-target_include_directories(pixel PRIVATE src)
+target_include_directories(pixel PRIVATE src/include)
 
 # 链接 raylib
 target_link_libraries(pixel raylib)
