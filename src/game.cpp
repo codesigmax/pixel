@@ -6,6 +6,9 @@ static Player player; // 声明玩家对象
 
 void InitGame()
 {
+    // 设置窗口可调整大小
+    SetConfigFlags(FLAG_WINDOW_RESIZABLE);
+    
     // 初始化窗口
     InitWindow(800, 600, "PixelGame");
 
