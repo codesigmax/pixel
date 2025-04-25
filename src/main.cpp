@@ -1,27 +1,23 @@
 #include "raylib.h"
+#include "game.h"
 
 int main()
 {
-    // 初始化窗口
-    InitWindow(800, 600, "PixelGame");
-
-    // 设置帧率
-    SetTargetFPS(60);
+    // 初始化游戏
+    InitGame();
 
     // 游戏主循环
     while (!WindowShouldClose())
     {
-        // 更新逻辑
+        // 更新游戏逻辑
+        UpdateGame();
 
-        // 绘制
-        BeginDrawing();
-        ClearBackground(RAYWHITE);
-        DrawText("Hello, PixelGame!", 10, 10, 20, DARKGRAY);
-        EndDrawing();
+        // 渲染游戏画面
+        DrawGame();
     }
 
-    // 关闭窗口
-    CloseWindow();
+    // 关闭游戏并释放资源
+    CloseGame();
 
     return 0;
 }
