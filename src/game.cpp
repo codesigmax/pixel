@@ -27,12 +27,13 @@ void DrawGame()
     // 清除背景
     BeginDrawing();
     ClearBackground(RAYWHITE);
+    
+    // 绘制玩家
+    DrawPlayer();
     // 绘制标题
     DrawText("PixelGame", 10, 10, 20, DARKGRAY);
     // 绘制FPS
     DrawFPS(10, 30);
-    // 绘制玩家
-    DrawPlayer();
 
     EndDrawing();
 }
